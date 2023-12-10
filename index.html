@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FlowersShop</title>
+<meta charset="utf-8" />
+<meta name="description" content="В нашем магазине вы найдете большой выбор свежесрезанных и горшечных растений, а также готовых букетов. Наши опытные флористы помогут подобрать цветы и оформить заказ на любое мероприятие. Также мы предлагаем услуги по доставке и упаковке подарков. Приходите к нам и окунитесь в атмосферу красоты и свежести!">
+<meta name="keywords" content="цветы, букеты, композиции, горшечные растения, свежесрезанные цветы, доставка, оформление праздников, свадеб, подарки для женщин, композиции на заказ."> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile.css">
+<link rel="shortcut icon" href="icon/free-icon-blossom-2227528.png" type="png">
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f1f1f1;
+}
+
+
+
+/* Стили верхней навигационной панели */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Стили ссылок верхней нав.панели */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Ссылка выравнивается по правому краю */
+.navbar a.right {
+  display: in;
+  float: right;
+}
+
+/* Меняем цвет при наведении мыши */
+.navbar a:hover {
+  background-color: #000000;
+  color: #5d81a2;
+}
+#footer {
+  padding: 20px; /* Поля */
+  text-decoration: none;
+  background: #5d81a2; /*  фон */
+  margin-top: 30px;
+}
+
+#footer img{
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.basket{
+  float: right;
+}
+
+.img-right {
+    transform: rotate(270deg);
+    padding: 80px;
+   }
+
+</style>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<body>
+  <div class="navbar">
+    <a href="#cards">Ассортимент</a>
+    <a href="#footer">Доставка</a>
+    <a href="#footer">Контакты</a>
+    <div>
+    <p class="basket" href="#" class="right"></p>
+    </div>
+  </div>
+  
+  <div id="header-image-menu">
+    <img src="шапочка.png">
+  </div>
+
+<div id="cards">
+<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a  class="card__image">
+      <img
+        src="каталог.jpg"
+        alt="пионовидные розы"
+      />
+    </a>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">130 </div>
+    </div>
+
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      пионоаидные розы
+    </a>
+    <div class="product__quantity"></div>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add" data-sb-id-or-vendor-code="001"
+    data-sb-product-name="пионоаидные розы"
+    data-sb-product-price="130"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог1.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">120</div>
+    </div>
+    <a href="#" class="card__title">
+      роза 40см
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="002"
+    data-sb-product-name="роза 40см"
+    data-sb-product-price="120"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог1.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог1.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">150</div>
+    </div>
+    <a href="#" class="card__title">
+      роза 50см
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="003"
+    data-sb-product-name="роза 50см"
+    data-sb-product-price="150"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог1.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог1.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">150</div>
+    </div>
+    <a href="#" class="card__title">
+      роза 60см
+    </a>
+    <div class="product__quantity"></div>
+
+  
+    <button class="card__add" data-sb-id-or-vendor-code="004"
+    data-sb-product-name="роза 60см"
+    data-sb-product-price="150"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог1.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог2.jpg"
+        alt="хризантема"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">150</div>
+    </div>
+    <a href="#" class="card__title">
+      хризантемы
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="005"
+    data-sb-product-name="хризантемы"
+    data-sb-product-price="150"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог2.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог33.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">200</div>
+    </div>
+    <a href="#" class="card__title">
+      эустома
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="006"
+    data-sb-product-name="эустома"
+    data-sb-product-price="200"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог33.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог4.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">120</div>
+    </div>
+    <a href="#" class="card__title">
+      тюльпан
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="007"
+    data-sb-product-name="тюльпан"
+    data-sb-product-price="120"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог4.jpg">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог5.jpg"
+        alt="розы"
+      />
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">1000</div>
+    </div>
+    <a href="#" class="card__title">
+      гортензия (предзаказ)
+    </a>
+    <div class="product__quantity"></div>
+
+
+    <button class="card__add" data-sb-id-or-vendor-code="008"
+    data-sb-product-name="гортензия"
+    data-sb-product-price="1000"
+    data-sb-product-quantity="1"
+    data-sb-product-img="каталог5.jpg">В корзину</button>
+  </div>
+</div>
+
+
+
+</div>
+
+<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'card',
+				buttonAddToBasket: 'card__add',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'basket',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+
+
+</body>
+
+
+
+
+
+
+<div id="footer">
+  <div class="all-symbols">
+    <a href="https://t.me/elenazveti18"><img src="icons8-телеграмма-app-50.png" class="symbol" alt="telrgram icon"></a>
+    <a ><img src="icons8-телефон-50.png" class="symbol" alt="telefon">+7 918 286-58-68</a>
+    <a ><img src="icons8-новый-пост-50.png" class="symbol" alt="pochta">tchernousova.y@yandex.ru</a>
+    <a><img src="icons8-местоположение-50.png" >г.Кропоткин, мкр.1 ул.Двойная 130д</a>
+  </div>
+  </div>
+
+
